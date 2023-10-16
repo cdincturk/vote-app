@@ -1,0 +1,73 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__card {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    border: 1px solid rgb(215, 221, 219);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 32px 24px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    :first-of-type {
+      color: rgb(147, 157, 154);
+      line-height: 21px;
+      font-size: 14px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+    }
+
+    :last-of-type {
+      padding: 0px;
+      margin: 0px;
+      color: rgb(19, 23, 23);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      font-weight: 700;
+    }
+  }
+  &__detailbtn {
+    border-radius: 4px;
+    padding: 10px 10px;
+    font-weight: 700;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-color: rgb(215, 221, 219);
+    border-width: 0px;
+    border-style: none;
+    background-color: rgb(45, 196, 77);
+    box-shadow: rgba(0, 0, 0, 0) 0px 1px 4px 0px inset;
+    color: white;
+    font-size: 14px;
+  }
+
+
+}
